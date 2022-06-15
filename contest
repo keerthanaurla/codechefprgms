@@ -1,0 +1,92 @@
+//DNA STORAGE
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t>0)
+	{
+	    int c;
+	    char s;
+	    cin>>c;
+	    char arr[1000];
+	    for(int i=0;i<c;i++)
+	    {
+	        cin>>arr[i];
+	    }
+	    for(int i=0;i<c-1;i+=2)
+	    {
+	        int j=i+1;
+	        if(arr[i]=='0' && arr[j]=='0')
+	        {
+	            s='A';
+	            
+	        }
+	        else if(arr[i]=='0' && arr[j]=='1')
+	        {
+	            s='T';
+	            
+	        }
+	        else if(arr[i]=='1' && arr[j]=='0')
+	        {
+	            s='C';
+	       
+	        }
+	        else if(arr[i]=='1' && arr[j]=='1')
+	        {
+	            s='G';
+	        }
+	        cout<<s;
+	    }
+	    cout<<endl;
+	    t--;
+	}
+	return 0;
+}
+//WAITING TIME
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t>0)
+	{
+	    int w,c,k;
+	    cin>>w;
+	    cin>>k;
+	    c=w*7;
+	    cout<<c-k<<endl;
+	    t--;
+	}
+	return 0;
+}
+//BURGER
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+    int t;
+    cin>>t;
+    while(t>0)
+    {
+        int b,c;
+        cin>>b;
+        cin>>c;
+        if(b>c)
+        {
+            cout<<c<<endl;
+        }
+        else
+        {
+            cout<<b<<endl;
+        }
+        t--;
+    }
+	return 0;
+}
+
